@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Tyler A. Green <greent@tyleragreen.com>",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.1.2"
+  }
 }
