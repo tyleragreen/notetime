@@ -1,12 +1,9 @@
-# title NYC Subway opens
-# tags policy
-# date October 27, 1904
+## NYC Subway opens
 
 The IRT opened on this date.
-# title Daniel Patrick makes the news
-# tags policy moynihan
-# date June 13, 2017
-
-The NY state congressman voted on something.
+## Painting the Elephant
 
 An incredible article.
+## Daniel Patrick makes the news
+
+The NY state congressman voted on something.
