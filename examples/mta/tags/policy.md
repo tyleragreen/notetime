@@ -1,4 +1,4 @@
-# MTA History
+# policy
 ## Tags
 - [policy](tags/policy.md)
 - [moynihan](tags/moynihan.md)
@@ -14,7 +14,3 @@ The IRT opened on this date.
 The NY state congressman voted on something.
 - Date: June 13, 2017
 - Tags: policy moynihan
-## Painting the Elephant
-
-An incredible article.
-- Tags: article ravitch
