@@ -1,9 +1,9 @@
 # policy
 ## Tags
-- [policy](tags/policy.md)
-- [moynihan](tags/moynihan.md)
-- [article](tags/article.md)
-- [ravitch](tags/ravitch.md)
+- [policy](policy.md)
+- [article](article.md)
+- [ravitch](ravitch.md)
+- [moynihan](moynihan.md)
 ## NYC Subway opens
 
 The IRT opened on this date.

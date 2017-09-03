@@ -1,9 +1,9 @@
 # article
 ## Tags
-- [policy](tags/policy.md)
-- [moynihan](tags/moynihan.md)
-- [article](tags/article.md)
-- [ravitch](tags/ravitch.md)
+- [policy](policy.md)
+- [article](article.md)
+- [ravitch](ravitch.md)
+- [moynihan](moynihan.md)
 ## Painting the Elephant
 
 An incredible article.
