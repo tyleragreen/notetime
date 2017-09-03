@@ -9,5 +9,5 @@
 
 An incredible article.
 - Sources: [newyorker](http://www.newyorker.com/) [nyt](http://www.nytimes.com/)
-- Created At: September 2, 2017
+- Created at: September 2, 2017
 - Tags: [article](article.md) [ravitch](ravitch.md)
