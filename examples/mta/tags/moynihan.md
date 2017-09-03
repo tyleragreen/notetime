@@ -4,7 +4,8 @@
 - [moynihan](moynihan.md)
 - [policy](policy.md)
 - [ravitch](ravitch.md)
-## Daniel Patrick makes the news
+## Notes
+### Daniel Patrick makes the news
 
 The NY state congressman voted on something.
 - Date: June 13, 2017

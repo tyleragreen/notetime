@@ -4,9 +4,10 @@
 - [moynihan](moynihan.md)
 - [policy](policy.md)
 - [ravitch](ravitch.md)
-## Painting the Elephant
+## Notes
+### Painting the Elephant
 
 An incredible article.
-- Sources: [newyorker](http://www.newyorker.com/)
+- Sources: [newyorker](http://www.newyorker.com/) [nyt](http://www.nytimes.com/)
 - Created At: September 2, 2017
 - Tags: [article](article.md) [ravitch](ravitch.md)
