@@ -7,4 +7,6 @@
 ## Painting the Elephant
 
 An incredible article.
+- Sources: [newyorker](http://www.newyorker.com/)
+- Created At: September 2, 2017
 - Tags: [article](article.md) [ravitch](ravitch.md)
