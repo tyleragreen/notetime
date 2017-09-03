@@ -1,8 +1,8 @@
 # MTA History
 ## Tags
-- [policy](tags/policy.md)
-- [moynihan](tags/moynihan.md)
 - [article](tags/article.md)
+- [moynihan](tags/moynihan.md)
+- [policy](tags/policy.md)
 - [ravitch](tags/ravitch.md)
 ## NYC Subway opens
 
@@ -13,7 +13,7 @@ The IRT opened on this date.
 
 The NY state congressman voted on something.
 - Date: June 13, 2017
-- Tags: [policy](tags/policy.md) [moynihan](tags/moynihan.md)
+- Tags: [moynihan](tags/moynihan.md) [policy](tags/policy.md)
 ## Painting the Elephant
 
 An incredible article.

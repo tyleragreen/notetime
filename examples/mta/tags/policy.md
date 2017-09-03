@@ -1,8 +1,8 @@
 # policy
 ## Tags
-- [policy](policy.md)
-- [moynihan](moynihan.md)
 - [article](article.md)
+- [moynihan](moynihan.md)
+- [policy](policy.md)
 - [ravitch](ravitch.md)
 ## NYC Subway opens
 
@@ -13,4 +13,4 @@ The IRT opened on this date.
 
 The NY state congressman voted on something.
 - Date: June 13, 2017
-- Tags: [policy](policy.md) [moynihan](moynihan.md)
+- Tags: [moynihan](moynihan.md) [policy](policy.md)

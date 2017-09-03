@@ -1,8 +1,8 @@
 # article
 ## Tags
-- [policy](policy.md)
-- [moynihan](moynihan.md)
 - [article](article.md)
+- [moynihan](moynihan.md)
+- [policy](policy.md)
 - [ravitch](ravitch.md)
 ## Painting the Elephant
 
