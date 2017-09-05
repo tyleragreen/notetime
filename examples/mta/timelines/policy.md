@@ -1,5 +1,4 @@
 # policy Timeline
-A timeline's description.
 ## Decades
 - [1900s](#1900s)
 - [2010s](#2010s)
