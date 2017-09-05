@@ -1,19 +1,19 @@
 # policy
 ## Tags
-- [article](article.md)
-- [moynihan](moynihan.md)
-- [policy](policy.md)
-- [ravitch](ravitch.md)
+- [article](../tags/article.md)
+- [moynihan](../tags/moynihan.md)
+- [policy](../tags/policy.md)
+- [ravitch](../tags/ravitch.md)
 ## Notes
 ### NYC Subway opens
 
 The IRT opened on this date.
 - Date: October 27, 1904
 - Created at: August 28, 2017
-- Tags: [policy](policy.md)
+- Tags: [policy](../tags/policy.md)
 ### Daniel Patrick makes the news
 
 The NY state congressman voted on something.
 - Date: June 13, 2017
 - Created at: August 28, 2017
-- Tags: [moynihan](moynihan.md) [policy](policy.md)
+- Tags: [moynihan](../tags/moynihan.md) [policy](../tags/policy.md)

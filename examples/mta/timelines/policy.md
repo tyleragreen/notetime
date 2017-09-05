@@ -9,11 +9,11 @@ A timeline's description.
 The IRT opened on this date.
 - Date: October 27, 1904
 - Created at: August 28, 2017
-- Tags: [policy](policy.md)
+- Tags: [policy](../tags/policy.md)
 ## 2010s
 ### Daniel Patrick makes the news
 
 The NY state congressman voted on something.
 - Date: June 13, 2017
 - Created at: August 28, 2017
-- Tags: [moynihan](moynihan.md) [policy](policy.md)
+- Tags: [moynihan](../tags/moynihan.md) [policy](../tags/policy.md)
