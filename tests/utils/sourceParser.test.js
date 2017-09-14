@@ -18,8 +18,14 @@ const multiSource = singleSource.concat([
   "; 2-source-url http://www.nytimes.com/1982/04/09/nyregion/dole-sees-horror-story-in-mta-leasing-deal.html",
 ]);
 
+const tripleSource = [
+  "; source-title Title 1",
+  "; 4-source-title Title 3",
+  "; 2-source-title Title 2",
+];
+
 describe('The source parser', () => {
-  it('should parse a single source', async () => {
+  it('should parse a single source', () => {
     const sources = sourceParser(singleSource);
     const source = sources[0];
 
@@ -30,20 +36,28 @@ describe('The source parser', () => {
     expect(source.url).toBe(lineParser(singleSource[4]));
   });
 
-  xit('should parse multiple sources', async () => {
-    const sources = sourceParser(singleSource);
+  it('should parse multiple sources', () => {
+    const sources = sourceParser(multiSource);
     const firstSource = sources[0];
     const secondSource = sources[1];
 
     expect(sources.length).toBe(2);
-    expect(firstSource.publication).toBe(multiSource[1].slice(3));
-    expect(firstSource.title).toBe(multiSource[2].slice(3));
-    expect(firstSource.getDateStr()).toBe(multiSource[3].slice(3));
-    expect(firstSource.url).toBe(multiSource[4].slice(3));
+    expect(firstSource.publication).toBe(lineParser(multiSource[1]));
+    expect(firstSource.title).toBe(lineParser(multiSource[2]));
+    expect(firstSource.date).toBe(lineParser(multiSource[3]));
+    expect(firstSource.url).toBe(lineParser(multiSource[4]));
 
-    expect(secondSource.publication).toBe(multiSource[5].slice(3));
-    expect(secondSource.title).toBe(multiSource[6].slice(3));
-    expect(secondSource.getDateStr()).toBe(multiSource[7].slice(3));
-    expect(secondSource.url).toBe(multiSource[8].slice(3));
+    expect(secondSource.publication).toBe(lineParser(multiSource[6]));
+    expect(secondSource.title).toBe(lineParser(multiSource[7]));
+    expect(secondSource.date).toBe(lineParser(multiSource[8]));
+    expect(secondSource.url).toBe(lineParser(multiSource[9]));
+  });
+
+  it('should parse three interleaved sources', () => {
+    const sources = sourceParser(tripleSource);
+
+    expect(sources[0].title).toBe(lineParser(tripleSource[0]));
+    expect(sources[1].title).toBe(lineParser(tripleSource[2]));
+    expect(sources[2].title).toBe(lineParser(tripleSource[1]));
   });
 });
