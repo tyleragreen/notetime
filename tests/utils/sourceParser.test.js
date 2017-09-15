@@ -24,7 +24,20 @@ const tripleSource = [
   "; 2-source-title Title 2",
 ];
 
+const multipleFirstSources = [
+  '; source-title Title 1',
+  '; 1-source-title Title 2',
+];
+
+const invalidSource = [
+  '; source-bad This tag is not recognized',
+];
+
 describe('The source parser', () => {
+  it('should reject an invalid property', () => {
+    const sources = sourceParser(invalidSource);
+  });
+
   it('should parse a single source', () => {
     const sources = sourceParser(singleSource);
     const source = sources[0];
@@ -59,5 +72,13 @@ describe('The source parser', () => {
     expect(sources[0].title).toBe(lineParser(tripleSource[0]));
     expect(sources[1].title).toBe(lineParser(tripleSource[2]));
     expect(sources[2].title).toBe(lineParser(tripleSource[1]));
+  });
+
+  it('should parse two sources with the different first notation', () => {
+    const sources = sourceParser(multipleFirstSources);
+
+    expect(sources.length).toBe(2);
+    expect(sources[0].title).toBe(lineParser(multipleFirstSources[0]));
+    expect(sources[1].title).toBe(lineParser(multipleFirstSources[1]));
   });
 });
