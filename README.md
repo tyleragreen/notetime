@@ -27,8 +27,8 @@ A notebook is configured using `.noterc`, like the following example.
 ## Tags
 
 ------|
-title|
-tags|
+title|The note's title
+tags|A space-separated list of tags
 date|
 source-id|
 source-title|

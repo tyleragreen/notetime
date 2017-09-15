@@ -35,7 +35,10 @@ const invalidSource = [
 
 describe('The source parser', () => {
   it('should reject an invalid property', () => {
-    const sources = sourceParser(invalidSource);
+    //const sources = sourceParser(invalidSource);
+    expect(() => {
+      sourceParser(invalidSource)
+    }).toThrow(Error);
   });
 
   it('should parse a single source', () => {
