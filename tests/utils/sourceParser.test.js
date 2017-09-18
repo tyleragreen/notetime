@@ -84,4 +84,18 @@ describe('The source parser', () => {
     expect(sources[0].title).toBe(lineParser(multipleFirstSources[0]));
     expect(sources[1].title).toBe(lineParser(multipleFirstSources[1]));
   });
+
+  it('should parse a simple source', () => {
+    const singleSimpleSource = [
+      '; source nyt url',
+    ];
+    const sources = sourceParser(singleSimpleSource);
+
+    expect(sources.length).toBe(1);
+    expect(sources[0].id).toBe('nyt');
+    expect(sources[0].url).toBe('url');
+    expect(sources[0].title).toBe(undefined);
+    expect(sources[0].publication).toBe(undefined);
+    expect(sources[0].date).toBe(undefined);
+  });
 });
