@@ -30,12 +30,34 @@ A notebook is configured using `.noterc`, like the following example.
 title|The note's title
 tags|A space-separated list of tags
 date|
+source|
 source-id|
 source-title|
 source-date|
-source-publication|
 source-url|
+source-publication|
+source-author|
+source-pages|
+source-institution|
 use-source|
+
+## Source Formats
+
+- "Title," *Publication*, Date. [link](#url)
+- "Title," *Institution*, Date. [link](#url)
+- [id](#url)
+
+### Simple vs Complex Sources
+
+A simple source has the format
+```
+; source <id> <url>
+```
+A complex source has the format
+```
+; source-id <id>
+```
+and can be any of the `source-*` or `<integer-identifier>-source-*` tags in the table above.
 
 ## Timelines
 
