@@ -1,4 +1,5 @@
 # Notetime
+[![Circle CI](https://circleci.com/gh/tyleragreen/notetime.svg?style=svg)](https://circleci.com/gh/tyleragreen/notetime)
 
 Notetime is a Markdown-based light-weight note-taking tool.
 
