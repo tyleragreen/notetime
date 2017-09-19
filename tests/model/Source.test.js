@@ -31,6 +31,20 @@ describe('A source', () => {
     expect(source.getStr()).toBe('"title," *publication*, date. [link](url)');
   });
 
+  it('can format with a publication with an author and pages', () => {
+    const source = new Source({
+      id: 'id',
+      title: 'title',
+      date: 'date',
+      publication: 'publication',
+      author: 'author',
+      pages: 'pages',
+      url: 'url',
+    });
+
+    expect(source.getStr()).toBe('author, "title," *publication*, pages, date. [link](url)');
+  });
+
   it('can format with just an id and url', () => {
     const source = new Source({
       id: 'id',
