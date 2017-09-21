@@ -48,7 +48,7 @@ describe('The source parser', () => {
     expect(sources.length).toBe(1);
     expect(source.publication).toBe(lineParser(singleSource[1]));
     expect(source.title).toBe(lineParser(singleSource[2]));
-    expect(source.date).toBe(lineParser(singleSource[3]));
+    expect(source.date.print()).toBe(lineParser(singleSource[3]));
     expect(source.url).toBe(lineParser(singleSource[4]));
   });
 
@@ -60,12 +60,12 @@ describe('The source parser', () => {
     expect(sources.length).toBe(2);
     expect(firstSource.publication).toBe(lineParser(multiSource[1]));
     expect(firstSource.title).toBe(lineParser(multiSource[2]));
-    expect(firstSource.date).toBe(lineParser(multiSource[3]));
+    expect(firstSource.date.print()).toBe(lineParser(multiSource[3]));
     expect(firstSource.url).toBe(lineParser(multiSource[4]));
 
     expect(secondSource.publication).toBe(lineParser(multiSource[6]));
     expect(secondSource.title).toBe(lineParser(multiSource[7]));
-    expect(secondSource.date).toBe(lineParser(multiSource[8]));
+    expect(secondSource.date.print()).toBe(lineParser(multiSource[8]));
     expect(secondSource.url).toBe(lineParser(multiSource[9]));
   });
 
