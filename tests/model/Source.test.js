@@ -16,7 +16,7 @@ describe('A source', () => {
       url: 'url',
     });
 
-    expect(source.getStr()).toBe('"title," *institution*, 1999. [link](url)');
+    expect(source.print()).toBe('"title," *institution*, 1999. [link](url)');
   });
 
   it('can format with a publication', () => {
@@ -28,7 +28,7 @@ describe('A source', () => {
       url: 'url',
     });
 
-    expect(source.getStr()).toBe('"title," *publication*, 1999. [link](url)');
+    expect(source.print()).toBe('"title," *publication*, 1999. [link](url)');
   });
 
   it('can format with a publication with an author and pages', () => {
@@ -42,7 +42,7 @@ describe('A source', () => {
       url: 'url',
     });
 
-    expect(source.getStr()).toBe('author, "title," *publication*, pages, 1999. [link](url)');
+    expect(source.print()).toBe('author, "title," *publication*, pages, 1999. [link](url)');
   });
 
   it('can format with just an id and url', () => {
@@ -50,6 +50,6 @@ describe('A source', () => {
       id: 'id',
       url: 'url',
     });
-    expect(source.getStr()).toBe('[id](url)');
+    expect(source.print()).toBe('[id](url)');
   });
 });
