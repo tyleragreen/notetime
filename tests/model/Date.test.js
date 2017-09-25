@@ -24,4 +24,11 @@ describe('A date', () => {
       new Date('1998 June');
     }).toThrow(Error);
   });
+
+  it('can compare two dates', () => {
+    const date1 = new Date('January 1, 2008');
+    const date2 = new Date('December 31, 2007');
+
+    expect(date1.lessThan(date2)).toBe(false);
+  });
 });
