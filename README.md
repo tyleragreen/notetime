@@ -66,5 +66,4 @@ A timeline is a list of notes of a particular tag sorted by date. Notetime will 
 
 1. The `date` tag, if one exists.
 2. The `source-date` tag, if one exists, and no `*-source-date` tags exist.
-3. The `*-source-date` tag specified by a `use-source *` tag.
-4. If none of these are found, the note will go into an `Undated Notes` at the bottom of the timeline.
+4. If neither of these are found, the note will go into an `Undated Notes` at the bottom of the timeline.
