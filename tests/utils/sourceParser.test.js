@@ -98,4 +98,38 @@ describe('The source parser', () => {
     expect(sources[0].publication).toBe(undefined);
     expect(sources[0].date).toBe(undefined);
   });
+
+  it('should parse multiple simple sources', () => {
+    const multipleSimpleSource = [
+      '; source nyt url',
+      '; source nydn url2',
+    ];
+    const sources = sourceParser(multipleSimpleSource);
+
+    expect(sources.length).toBe(2);
+    expect(sources[0].id).toBe('nyt');
+    expect(sources[0].url).toBe('url');
+    expect(sources[0].title).toBe(undefined);
+    expect(sources[0].publication).toBe(undefined);
+    expect(sources[0].date).toBe(undefined);
+
+    expect(sources[1].id).toBe('nydn');
+    expect(sources[1].url).toBe('url2');
+    expect(sources[1].title).toBe(undefined);
+    expect(sources[1].publication).toBe(undefined);
+    expect(sources[1].date).toBe(undefined);
+  });
+
+  // FIXME this fails. Consider whether it should keep failing or not.
+  // sourceParser should be cleaned up to support this simple algorithm change.
+  xit('should parse multiple complex sources with no implicit labeling', () => {
+    const tripleSource = [
+      "; 1-source-title Title 1",
+      "; 4-source-title Title 3",
+      "; 2-source-title Title 2",
+    ];
+    const source = sourceParser(tripleSource);
+
+    expect(sources.length).toBe(3);
+  });
 });
