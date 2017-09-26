@@ -7,6 +7,18 @@ describe('A source', () => {
     }).toThrow(Error);
   });
 
+  it('fails if created with no props', () => {
+    expect(() => {
+      new Source({})
+    }).toThrow(Error);
+  });
+
+  it('fails if created with no arguments', () => {
+    expect(() => {
+      new Source()
+    }).toThrow(Error);
+  });
+
   it('can format with an institution', () => {
     const source = new Source({
       id: 'id',
