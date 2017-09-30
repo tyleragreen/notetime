@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const child_process = require('child_process');
 const getNotesLocation = require('../lib/utils/getNotesLocation');
 const readConfig = require('../lib/utils/readConfig');
