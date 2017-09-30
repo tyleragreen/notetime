@@ -17,7 +17,7 @@ A notebook is configured using `.noterc`, like the following example.
 ```
 {
   "title": "Urban History",
-  "description": "I'm studying urban history and these are my notes. Focus will be placed on all financial aspects, particularly those of New York City and the [Metropolitan Transportation Authority](http://www.mta.info).",
+  "description": "A notebook's description",
   "timelines": [
     "fare-increases",
     "expansion"
@@ -40,11 +40,11 @@ source-publication|
 source-author|
 source-pages|
 source-institution|
-use-source|
 
 ## Source Formats
 
 - "Title," *Publication*, Date. [link](#url)
+- Author, "Title," *Publication*, Date. [link](#url)
 - "Title," *Institution*, Date. [link](#url)
 - [id](#url)
 
