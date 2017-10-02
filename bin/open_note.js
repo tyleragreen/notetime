@@ -9,7 +9,7 @@ const search = process.argv.slice(2).join(' ');
 const go = async () => {
   const config = await readConfig();
   const path = getNotesLocation(config);
-  child_process.exec(`git grep "${search}" ${path}`, (err, stdout, stderr) => {
+  child_process.exec(`git grep -i "${search}" ${path}`, (err, stdout, stderr) => {
     if (err) {
       console.error(`exec error: ${err}`);
       return;
