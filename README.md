@@ -21,7 +21,10 @@ A notebook is configured using `.noterc`, like the following example.
   "timelines": [
     "fare-increases",
     "expansion"
-  ]
+  ],
+  "publications": {
+    "nyt": "The New York Times",
+  }
 }
 ```
 
