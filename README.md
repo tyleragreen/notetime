@@ -36,20 +36,21 @@ title|The note's title
 tags|A space-separated list of tags
 date| 
 source| 
-source-id| 
-source-title| 
-source-date| 
-source-url| 
-source-publication| 
-source-author| 
-source-pages| 
-source-institution| 
+*-source-id| 
+*-source-title| 
+*-source-date| 
+*-source-url| 
+*-source-publication| 
+*-source-author| 
+*-source-pages| 
+*-source-institution| 
 
 ## Source Formats
 
 - "Title," *Publication*, Date. [link](#url)
 - Author, "Title," *Publication*, Date. [link](#url)
 - "Title," *Institution*, Date. [link](#url)
+- Author, "Title", Date, ppPages.
 - [id](#url)
 
 ### Simple vs Complex Sources
@@ -60,9 +61,12 @@ A simple source has the format
 ```
 A complex source has the format
 ```
-; source-id <id>
+; 1-source-id <id>
+; 1-source-url <url>
+; 1-source-title <title>
+...
 ```
-and can be any of the `source-*` or `<integer-identifier>-source-*` tags in the table above.
+and can be any of the `<integer-identifier>-source-*` tags in the table above.
 
 ## Timelines
 
