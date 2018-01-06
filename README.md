@@ -27,19 +27,20 @@ A notebook is configured using `.noterc`, like the following example.
 
 ## Tags
 
-------|
+| Tag | Description |
+|------|-----|
 title|The note's title
 tags|A space-separated list of tags
-date|
-source|
-source-id|
-source-title|
-source-date|
-source-url|
-source-publication|
-source-author|
-source-pages|
-source-institution|
+date| 
+source| 
+source-id| 
+source-title| 
+source-date| 
+source-url| 
+source-publication| 
+source-author| 
+source-pages| 
+source-institution| 
 
 ## Source Formats
 
