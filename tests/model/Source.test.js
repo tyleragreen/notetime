@@ -54,7 +54,7 @@ describe('A source', () => {
       url: 'url',
     });
 
-    expect(source.print()).toBe('author, "title," *publication*, pages, 1999. [link](url)');
+    expect(source.print()).toBe('author, "title," *publication*, pppages, 1999. [link](url)');
   });
 
   it('can format with just an id and url', () => {
