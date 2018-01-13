@@ -57,6 +57,17 @@ describe('A source', () => {
     expect(source.print()).toBe('author, "title," *publication*, pppages, 1999. [link](url)');
   });
 
+  it('can format with a publication defined in a config file', () => {
+    const source = new Source({
+      id: 'id-sample',
+      title: 'title',
+      date: '1999',
+      url: 'url',
+    });
+
+    expect(source.print()).toBe('"title," *publication-sample*, 1999. [link](url)');
+  });
+
   it('can format with just an id and url', () => {
     const source = new Source({
       id: 'id',

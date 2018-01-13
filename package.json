@@ -4,7 +4,7 @@
   "description": "Markdown-based note-taking tool",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "NODE_CONFIG_DIR=tests/fixtures jest"
   },
   "bin": {
     "note-deploy": "./bin/deploy.sh",

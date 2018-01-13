@@ -12,7 +12,7 @@ Notetime is a Markdown-based light-weight note-taking tool.
 
 ## Configuration
 
-A notebook is configured using `.noterc`, like the following example.
+A notebook is configured using `config.json`, like the following example.
 
 ```
 {
