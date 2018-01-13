@@ -2,12 +2,11 @@
 
 const child_process = require('child_process');
 const getNotesLocation = require('../lib/utils/getNotesLocation');
-const readConfig = require('../lib/utils/readConfig');
+const config = require('../lib/utils/readConfig');
 
 const search = process.argv.slice(2).join(' ');
 
 const go = async () => {
-  const config = await readConfig();
   const path = getNotesLocation(config);
   child_process.exec(`git grep -i "${search}" ${path}`, (err, stdout, stderr) => {
     if (err) {
@@ -25,4 +24,5 @@ const go = async () => {
     console.log('Edited: ', file);
   });
 };
+
 go();
