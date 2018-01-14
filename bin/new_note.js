@@ -3,11 +3,10 @@
 const child_process = require('child_process');
 const moment = require('moment');
 const getNotesLocation = require('../lib/utils/getNotesLocation');
-const readConfig = require('../lib/utils/readConfig');
+const config = require('../lib/utils/readConfig');
 const dateFormat = require('../lib/utils/constants').dateFormats[0];
 
 const go = async () => {
-  const config = await readConfig();
   const path = getNotesLocation(config);
   const date = moment();
   const filename = date.format(dateFormat);
