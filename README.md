@@ -1,7 +1,7 @@
 # Notetime
 [![Circle CI](https://circleci.com/gh/tyleragreen/notetime.svg?style=svg)](https://circleci.com/gh/tyleragreen/notetime)
 
-Notetime is a Markdown-based light-weight note-taking tool.
+Notetime is a Markdown-based lightweight note-taking tool.
 
 ## Features
 
@@ -60,8 +60,11 @@ A notebook is configured using `config.json`, like the following example.
   }
 }
 ```
+## Anatomy of a Note
 
-## Keywords
+Every line in a note must either contain a keyword or it becomes part of the note body.
+
+### Keywords
 
 A note is composed of a series of keywords and a note body. All keywords should be used on their own line and prefaced with a semicolon. For example:
 ```
@@ -70,20 +73,28 @@ A note is composed of a series of keywords and a note body. All keywords should 
 
 | Keyword | Description |
 |------|-----|
-`title`|The note's title
-`tags`|A space-separated list of tags
-`date`| 
-`source`| 
-`*-source-id`| 
-`*-source-title`| 
-`*-source-date`| 
-`*-source-url`| 
-`*-source-publication`| 
-`*-source-author`| 
-`*-source-pages`| 
-`*-source-institution`| 
+`title <title>`|The note's title
+`tags <tag> <tag> <tag> ...`|A space-separated list of tags
+`date <date>`| 
+`source <source-id> <source-url>`| 
+`*-source-id <source-id>`| 
+`*-source-title <source-title>`| 
+`*-source-date <date>`| 
+`*-source-url <url>`| 
+`*-source-publication <publication>`| 
+`*-source-author <author>`| 
+`*-source-pages <pages>`| 
+`*-source-institution <institution>`| 
 
-## Source Formats
+Unrecognized keywords are ignore when building a note.
+
+### Note Body
+
+All lines in a note which are not prefaced with a semicolon are treated as the note body and should be written in Markdown.
+
+## Sources
+
+The following formats of sources are supported.
 
 - "Title," *Publication*, Date. [link](#url)
 - Author, "Title," *Publication*, Date. [link](#url)
@@ -92,6 +103,8 @@ A note is composed of a series of keywords and a note body. All keywords should 
 - [id](#url)
 
 ### Simple vs Complex Sources
+
+Simple sources are recommended for quick saving of links. Complex sources are recommended to create citations.
 
 A simple source has the format
 ```
