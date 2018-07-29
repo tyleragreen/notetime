@@ -111,5 +111,7 @@ and can be any of the `<integer-identifier>-source-*` tags in the table above.
 A timeline is a list of notes of a particular tag sorted by date. Notetime will attempt to sort a note using the following fall-through logic:
 
 1. The `date` tag, if one exists.
-2. The `source-date` tag, if one exists, and no `*-source-date` tags exist.
-4. If neither of these are found, the note will go into an `Undated Notes` at the bottom of the timeline.
+1. The `*-source-date`, if a single complex source exists for that note.
+1. If neither of these are found, the note will go into an `Undated Notes` at the bottom of the timeline.
+
+If your notes tend to have multiple complex sources with dates, they must use a `date` tag to be properly sorted in a timeline.
