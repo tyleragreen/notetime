@@ -10,6 +10,39 @@ Notetime is a Markdown-based light-weight note-taking tool.
 - Always-published notes
 - Integration with [GitBooks](https://gitbooks.com)
 
+## Example
+
+This note body
+
+```
+; title NYC Subway opens
+; tags policy
+; date October 27, 1904
+
+The IRT opened on this date.
+```
+produces this output in `README.md` and `tags/policy.md`
+
+### NYC Subway opens
+
+The IRT opened on this date.
+- Date: October 27, 1904
+- Tags: [policy](tags/policy.md)
+
+## Command-Line Utilities
+
+`note-new`
+
+Opens a blank file in `vi` at `notes/2018-07-29-14-54-00.md` (or whatever notes path you have configured in your `config.json`.
+
+`note-deploy`
+
+Cleans all generated directories (`tags/` and `timelines`), builds your notes, adds all notes and generated directories to git, makes a new commit, and pushes the commit to your remote.
+
+`note-open <text string to search for>`
+
+Opens the note that includes the `text string to search for`. If it is found in more than one file, script will fail and list out all matching files.
+
 ## Configuration
 
 A notebook is configured using `config.json`, like the following example.
@@ -28,22 +61,27 @@ A notebook is configured using `config.json`, like the following example.
 }
 ```
 
-## Tags
+## Keywords
 
-| Tag | Description |
+A note is composed of a series of keywords and a note body. All keywords should be used on their own line and prefaced with a semicolon. For example:
+```
+; title A Note's Title
+```
+
+| Keyword | Description |
 |------|-----|
-title|The note's title
-tags|A space-separated list of tags
-date| 
-source| 
-*-source-id| 
-*-source-title| 
-*-source-date| 
-*-source-url| 
-*-source-publication| 
-*-source-author| 
-*-source-pages| 
-*-source-institution| 
+`title`|The note's title
+`tags`|A space-separated list of tags
+`date`| 
+`source`| 
+`*-source-id`| 
+`*-source-title`| 
+`*-source-date`| 
+`*-source-url`| 
+`*-source-publication`| 
+`*-source-author`| 
+`*-source-pages`| 
+`*-source-institution`| 
 
 ## Source Formats
 
