@@ -33,7 +33,7 @@ The IRT opened on this date.
 
 `note-new`
 
-Opens a blank file in `vi` at `notes/2018-07-29-14-54-00.md` (or whatever notes path you have configured in your `config.json`.
+Opens a blank file in `vi` at `notes/2018-07-29-14-54-00.md` (or whatever notes path you have configured in your `config.json`).
 
 `note-deploy`
 
@@ -86,7 +86,7 @@ A note is composed of a series of keywords and a note body. All keywords should 
 `*-source-pages <pages>`| 
 `*-source-institution <institution>`| 
 
-Unrecognized keywords are ignore when building a note.
+Unrecognized keywords are ignored when building a note.
 
 ### Note Body
 
