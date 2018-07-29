@@ -5,9 +5,9 @@ Notetime is a Markdown-based light-weight note-taking tool.
 
 ## Features
 
-- Custom tagging of notes
-- Timeline creation for particular tags
 - Always-published notes
+- Note tagging
+- Timeline creation
 - Integration with [GitBooks](https://gitbooks.com)
 
 ## Example
