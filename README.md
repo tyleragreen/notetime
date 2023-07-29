@@ -1,17 +1,13 @@
 # Notetime
-[![Circle CI](https://circleci.com/gh/tyleragreen/notetime.svg?style=svg)](https://circleci.com/gh/tyleragreen/notetime)
-
 Notetime is a Markdown-based lightweight note-taking tool.
 
 ## Features
-
 - Always-published notes
 - Note tagging
 - Timeline creation
 - Integration with [GitBooks](https://gitbooks.com)
 
 ## Example
-
 This note body
 
 ```
